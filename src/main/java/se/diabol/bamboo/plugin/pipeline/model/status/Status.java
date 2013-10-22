@@ -15,13 +15,13 @@ You should have received a copy of the GNU General Public License
 along with Delivery Pipeline Plugin.
 If not, see <http://www.gnu.org/licenses/>.
 */
-package se.diabol.bamboo.plugin.model.status;
+package se.diabol.bamboo.plugin.pipeline.model.status;
 
 
 import javax.xml.bind.annotation.XmlElement;
 import java.util.Objects;
 
-import static se.diabol.bamboo.plugin.model.status.StatusType.*;
+import static se.diabol.bamboo.plugin.pipeline.model.status.StatusType.*;
 
 public class Status {
 

@@ -1,4 +1,4 @@
-package se.diabol.bamboo.plugin;
+package se.diabol.bamboo.plugin.pipeline;
 
 public interface MyPluginComponent
 {

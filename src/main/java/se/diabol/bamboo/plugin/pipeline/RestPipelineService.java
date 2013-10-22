@@ -1,4 +1,4 @@
-package se.diabol.bamboo.plugin;
+package se.diabol.bamboo.plugin.pipeline;
 
 
 import com.atlassian.bamboo.build.Job;
@@ -10,10 +10,10 @@ import com.atlassian.bamboo.plan.TopLevelPlan;
 import com.atlassian.bamboo.project.Project;
 import com.atlassian.bamboo.resultsummary.ResultsSummary;
 import com.atlassian.bamboo.resultsummary.ResultsSummaryManager;
-import se.diabol.bamboo.plugin.model.Pipeline;
-import se.diabol.bamboo.plugin.model.Stage;
-import se.diabol.bamboo.plugin.model.Task;
-import se.diabol.bamboo.plugin.model.status.StatusFactory;
+import se.diabol.bamboo.plugin.pipeline.model.Pipeline;
+import se.diabol.bamboo.plugin.pipeline.model.Stage;
+import se.diabol.bamboo.plugin.pipeline.model.Task;
+import se.diabol.bamboo.plugin.pipeline.model.status.StatusFactory;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;

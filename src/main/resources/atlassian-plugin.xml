@@ -22,8 +22,8 @@
     </web-resource>
     
     <!-- publish our component -->
-    <component key="myPluginComponent" class="se.diabol.bamboo.plugin.MyPluginComponentImpl" public="true">
-        <interface>se.diabol.bamboo.plugin.MyPluginComponent</interface>
+    <component key="myPluginComponent" class="se.diabol.bamboo.plugin.pipeline.MyPluginComponentImpl" public="true">
+        <interface>se.diabol.bamboo.plugin.pipeline.MyPluginComponent</interface>
     </component>
     
     <!-- import from the product container -->

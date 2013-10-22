@@ -15,7 +15,7 @@ You should have received a copy of the GNU General Public License
 along with Delivery Pipeline Plugin.
 If not, see <http://www.gnu.org/licenses/>.
 */
-package se.diabol.bamboo.plugin.model;
+package se.diabol.bamboo.plugin.pipeline.model;
 
 import com.google.common.collect.ImmutableList;
 

@@ -15,34 +15,39 @@ You should have received a copy of the GNU General Public License
 along with Delivery Pipeline Plugin.
 If not, see <http://www.gnu.org/licenses/>.
 */
-package se.diabol.bamboo.plugin.model;
+package se.diabol.bamboo.plugin.pipeline.model;
 
 
-public class UserInfo extends AbstractItem {
+public class TestResult {
 
-    private String avatarUrl;
+    private int failed;
+    private int skipped;
+    private int total;
     private String url;
 
-    public UserInfo() {
-        super();
+    public TestResult() {
     }
 
-
-    public UserInfo(String name) {
-        this(name, null, null);
-    }
-
-    public UserInfo(String name, String url, String avatarUrl) {
-        super(name);
-        this.avatarUrl = avatarUrl;
+    public TestResult(int failed, int skipped, int total, String url) {
+        this.failed = failed;
+        this.skipped = skipped;
+        this.total = total;
         this.url = url;
-    }
-
-    public String getAvatarUrl() {
-        return avatarUrl;
     }
 
     public String getUrl() {
         return url;
+    }
+
+    public int getFailed() {
+        return failed;
+    }
+
+    public int getSkipped() {
+        return skipped;
+    }
+
+    public int getTotal() {
+        return total;
     }
 }

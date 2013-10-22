@@ -15,39 +15,12 @@ You should have received a copy of the GNU General Public License
 along with Delivery Pipeline Plugin.
 If not, see <http://www.gnu.org/licenses/>.
 */
-package se.diabol.bamboo.plugin.model;
+package se.diabol.bamboo.plugin.pipeline.model.status;
 
+import javax.xml.bind.annotation.XmlRootElement;
 
-public class TestResult {
-
-    private int failed;
-    private int skipped;
-    private int total;
-    private String url;
-
-    public TestResult() {
-    }
-
-    public TestResult(int failed, int skipped, int total, String url) {
-        this.failed = failed;
-        this.skipped = skipped;
-        this.total = total;
-        this.url = url;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public int getFailed() {
-        return failed;
-    }
-
-    public int getSkipped() {
-        return skipped;
-    }
-
-    public int getTotal() {
-        return total;
-    }
+@XmlRootElement
+public enum StatusType
+{
+    IDLE, RUNNING, QUEUED, SUCCESS, UNSTABLE, FAILED, CANCELLED, DISABLED
 }

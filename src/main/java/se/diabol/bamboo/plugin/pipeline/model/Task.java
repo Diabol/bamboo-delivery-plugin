@@ -15,10 +15,10 @@ You should have received a copy of the GNU General Public License
 along with Delivery Pipeline Plugin.
 If not, see <http://www.gnu.org/licenses/>.
 */
-package se.diabol.bamboo.plugin.model;
+package se.diabol.bamboo.plugin.pipeline.model;
 
 
-import se.diabol.bamboo.plugin.model.status.Status;
+import se.diabol.bamboo.plugin.pipeline.model.status.Status;
 
 import javax.xml.bind.annotation.XmlElement;
 import java.util.Objects;

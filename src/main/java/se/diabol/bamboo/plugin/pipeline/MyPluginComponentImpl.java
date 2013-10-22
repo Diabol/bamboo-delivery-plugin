@@ -1,4 +1,4 @@
-package se.diabol.bamboo.plugin;
+package se.diabol.bamboo.plugin.pipeline;
 
 import com.atlassian.sal.api.ApplicationProperties;
 

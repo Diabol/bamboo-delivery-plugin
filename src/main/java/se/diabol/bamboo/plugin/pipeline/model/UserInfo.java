@@ -15,12 +15,34 @@ You should have received a copy of the GNU General Public License
 along with Delivery Pipeline Plugin.
 If not, see <http://www.gnu.org/licenses/>.
 */
-package se.diabol.bamboo.plugin.model.status;
+package se.diabol.bamboo.plugin.pipeline.model;
 
-import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
-public enum StatusType
-{
-    IDLE, RUNNING, QUEUED, SUCCESS, UNSTABLE, FAILED, CANCELLED, DISABLED
+public class UserInfo extends AbstractItem {
+
+    private String avatarUrl;
+    private String url;
+
+    public UserInfo() {
+        super();
+    }
+
+
+    public UserInfo(String name) {
+        this(name, null, null);
+    }
+
+    public UserInfo(String name, String url, String avatarUrl) {
+        super(name);
+        this.avatarUrl = avatarUrl;
+        this.url = url;
+    }
+
+    public String getAvatarUrl() {
+        return avatarUrl;
+    }
+
+    public String getUrl() {
+        return url;
+    }
 }
