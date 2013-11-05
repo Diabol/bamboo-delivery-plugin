@@ -12,5 +12,6 @@ Full documentation is always available at:
 
 https://developer.atlassian.com/display/DOCS/Introduction+to+the+Atlassian+Plugin+SDK
 https://developer.atlassian.com/display/DOCS/Install+the+Atlassian+SDK+on+a+Linux+or+Mac+System
+https://developer.atlassian.com/display/DOCS/Command+Reference
 
 Man behöver installera Atlassians plugin SDK för att bygga pluginen, se doc ovan.
