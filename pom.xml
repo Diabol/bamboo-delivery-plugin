@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>se.diabol.bamboo.plugin</groupId>
+    <groupId>se.diabol.bamboo.plugin.pipeline</groupId>
     <artifactId>delivery-pipeline-plugin</artifactId>
     <version>0.1-SNAPSHOT</version>
 

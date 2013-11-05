@@ -9,23 +9,37 @@
 
     <!-- add our i18n resource -->
     <resource type="i18n" name="i18n" location="delivery-pipeline-plugin"/>
-    
+
+
+
+
+    <!-- Wallboard Actions -->
+    <xwork key="viewPipelineWallboard" name="View Pipeline Wallboard">
+        <package name="wallboardPlugin" extends="default">
+            <action name="viewPipelineWallboard"
+                    class="se.diabol.bamboo.plugin.pipeline.PipelineWallboardActionImpl"
+                    method="default">
+                <result name="success" type="freemarker">/viewPipelineWallboard.ftl</result>
+            </action>
+            <action name="getPipelineJson"
+                    class="se.diabol.bamboo.plugin.pipeline.PipelineWallboardActionImpl"
+                    method="json">
+                <result name="success" type="json"/>
+            </action>
+        </package>
+    </xwork>
+
     <!-- add our web resources -->
     <web-resource key="delivery-pipeline-plugin-resources" name="delivery-pipeline-plugin Web Resources">
         <dependency>com.atlassian.auiplugin:ajs</dependency>
         
         <resource type="download" name="delivery-pipeline-plugin.css" location="/css/delivery-pipeline-plugin.css"/>
-        <resource type="download" name="delivery-pipeline-plugin.js" location="/js/delivery-pipeline-plugin.js"/>
-        <resource type="download" name="images/" location="/images"/>
+        <resource type="download" name="pipe.js" location="/js/pipe.js"/>
+        <resource type="download" name="moment.min.js" location="/js/moment.min.js"/>
 
         <context>delivery-pipeline-plugin</context>
     </web-resource>
-    
-    <!-- publish our component -->
-    <component key="myPluginComponent" class="se.diabol.bamboo.plugin.pipeline.MyPluginComponentImpl" public="true">
-        <interface>se.diabol.bamboo.plugin.pipeline.MyPluginComponent</interface>
-    </component>
-    
+
     <!-- import from the product container -->
     <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties" />
 
